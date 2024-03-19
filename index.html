@@ -10,7 +10,7 @@
 </head>
 <body>
     <nav> 
-        <img src="/assets/placeholder.png" alt="Darkmode/Lightmode toggle">
+        <img src="assets/placeholder.png" alt="Darkmode/Lightmode toggle">
         <a href="blog.html">Blogs</a>
     </nav>
 
@@ -20,7 +20,7 @@
         </section>
         <section class ="content">
             <h1>What do you have to say!</h1>
-            <form action="">
+            <form    id="form" onsubmit="gatherBlog()">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name"><br>
                 <label for="title">Title:</label>
@@ -35,6 +35,6 @@
     <footer>
         <a href="https://jakerasmusson.github.io/Portfolio_Website/index.html">Portfolio Website</a>
     </footer>
-    
+    <script src="assets/js/form.js"></script>
 </body>
 </html>
