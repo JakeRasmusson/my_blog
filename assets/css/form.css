@@ -1,0 +1,31 @@
+
+.main {
+    display: flex;
+    align-items: center;
+    width: 98%;
+    flex-wrap: wrap;
+}
+h1 {
+    width: 100%;
+    align-self: center;
+}
+.content{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+form {
+    text-align: center;
+}
+input {
+    margin-bottom: 15px;
+}
