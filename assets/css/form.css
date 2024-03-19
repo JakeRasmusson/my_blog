@@ -1,12 +1,19 @@
 
-.main {
+.main { 
+    margin-top: 150px;
     display: flex;
     align-items: center;
     width: 98%;
     flex-wrap: wrap;
 }
+a {
+    font-size: 35px;
+
+
+}
+
 h1 {
-    width: 52%;
+    width: 100%;
     margin-bottom: 20px;
     text-align: center;
     align-self: center;
