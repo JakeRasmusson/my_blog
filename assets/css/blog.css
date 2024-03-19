@@ -4,7 +4,17 @@ h1 {
     font-weight: bold;
 }
 
-
+a.backButton {
+    padding: 1px 6px;
+    border: 1px outset buttonborder;
+    height: 25px;
+    width: 50px;
+    border-radius: 3px;
+    color: buttontext;
+    background-color: buttonface;
+    text-decoration: none;
+    text-align: center;
+}
 
 section {
     width: 99%;

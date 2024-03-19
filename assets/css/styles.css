@@ -13,12 +13,16 @@ nav {
 footer {
     position: absolute;
     bottom: 0px;  left: 0;
+    width: 100%;
     display: flex;
+    align-content: center;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 }
 
 footer a {
+
+    /* align-self: center; */
     height: 100px;
 }
 
