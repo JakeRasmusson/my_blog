@@ -1,7 +1,21 @@
 body {
     background-color: beige;
+    padding:0 1%;
 }
 nav {
     height: 100px;
     background-color: gray;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    height: 100px;
 }
