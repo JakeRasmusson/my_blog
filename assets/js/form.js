@@ -1,33 +1,45 @@
+//Array that will hold Blog objects
+let blogPost = []
 
-window.onload=function()
-{
-    document.getElementById('form').onsubmit=function(e)
-    {
+//HTML form
+const form = document.getElementById('form')
+
+//Kicks off fuction on form submit
+form.addEventListener('submit', gatherBlog, false)
+
+//removes defualt form HTML functions
+window.onload = function () {
+    form.onsubmit = function (e) {
         e.preventDefault();
     }
 };
 
-const blogPost = []
-const form = document.getElementById('form')
-form.addEventListener('submit', gatherBlog, false)
+//Adds current localstorage content to the blogpost array so it isn't overwritten
+function checkLocalStorage() {
+    let storedPost = JSON.parse(localStorage.getItem('blog'))
+    if (storedPost !== null) {
+        blogPost = storedPost;
+    }
+}
 
-
-
+//Gathers form fields and stores in local storage
 function gatherBlog() {
     const authName = document.getElementById('name').value;
     const title = document.getElementById('title').value;
     const content = document.getElementById('content').value;
+    //checks if any fields are empty
     if (authName === '' || title === '' || content === '') {
         alert('Please fill out all areas!')
         return
     } else {
-        blogPost.push({authName, title, content})
+        //addding blogs to local storage, resets form fields, and redirects to the blogs page
+        blogPost.push({ authName, title, content })
         localStorage.setItem('blog', JSON.stringify(blogPost))
-        let data = JSON.parse(localStorage.getItem('blog'))
-        console.log(data)
         form.reset();
         window.location.href = "blog.html";
-        
+
     }
 }
 
+//checks local storage
+checkLocalStorage()
