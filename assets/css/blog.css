@@ -27,24 +27,35 @@ section {
     border: 2px double lightgray;
     padding-bottom: 200px;
 }
-
-/* article h2 {
-    text-align: center;
+section div{
     width: 100%;
-    border: 5px solid black;
-    font-size: 35px;
-    margin-bottom: -100px;
-
-}
-article h3 {
-    text-align: center;
-    width: 100%;
-    border: 5px solid black;
-    font-size: 35px;
-    margin-bottom: -50px;
+    border: 5px solid blue;
+    border-style: solid;
+    margin: 50px 0;
 }
 
-article p {
-    margin-top: -200px;
-    margin-bottom: -250px;
-} */
+
+section h2 {
+    text-align: center;
+    width: 100%;
+    border: 5px solid blue;
+    border-style: hidden hidden solid;
+    font-size: 35px;
+    margin-bottom: 20px 0;
+}
+
+section h3 {
+    text-align: center;
+    width: 100%;
+    border: 5px solid blue;
+    font-size: 35px;
+    margin-bottom: 15px;
+    border-style: hidden hidden solid;
+}
+
+section p {
+    /* text-align: center; */
+    padding: 20px;
+    font-size: 20px;
+    margin-bottom: 45px;
+}
