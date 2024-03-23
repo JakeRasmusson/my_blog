@@ -4,15 +4,13 @@ let blogPost = []
 //HTML form
 const form = document.getElementById('form')
 
-//Kicks off fuction on form submit
-form.addEventListener('submit', gatherBlog, false)
+//removes defualt form HTML functions and calls gather blog function on form submit
 
-//removes defualt form HTML functions
-window.onload = function () {
-    form.onsubmit = function (e) {
+form.onsubmit = function (e) {
         e.preventDefault();
-    }
-};
+        gatherBlog()
+}
+
 
 //Adds current localstorage content to the blogpost array so it isn't overwritten
 function checkLocalStorage() {
