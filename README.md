@@ -4,7 +4,7 @@
 ## Description
 My goal with this project was to create myself a unique looking area to post my thoughts as I continue my growth in web develpment.  There is a section to create and posts and second page to display them.
 
-[Desployed website](https://jakerasmusson.github.io/Portfolio_Website/index.html)
+[Desployed website](https://jakerasmusson.github.io/my_blog/)
 ## Installation
 Select index.html in the root project folder to open the webpage.
 
